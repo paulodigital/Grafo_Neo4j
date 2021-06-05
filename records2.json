@@ -1,0 +1,350 @@
+﻿[
+  {
+    "p": {
+"start": {
+"identity": 0,
+"labels": [
+          "Cliente"
+        ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+        }
+      },
+"end": {
+"identity": 6,
+"labels": [
+          "Produto"
+        ],
+"properties": {
+"Nome": "Sapato",
+"Id": 2
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 0,
+"labels": [
+              "Cliente"
+            ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+            }
+          },
+          "relationship": {
+"identity": 1,
+"start": 0,
+"end": 6,
+"type": "COMPROU",
+"properties": {
+"Quantidade": 2
+            }
+          },
+          "end": {
+"identity": 6,
+"labels": [
+              "Produto"
+            ],
+"properties": {
+"Nome": "Sapato",
+"Id": 2
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 0,
+"labels": [
+          "Cliente"
+        ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+        }
+      },
+"end": {
+"identity": 5,
+"labels": [
+          "Produto"
+        ],
+"properties": {
+"Nome": "Bolsa de Couro",
+"Id": 1
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 0,
+"labels": [
+              "Cliente"
+            ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+            }
+          },
+          "relationship": {
+"identity": 0,
+"start": 0,
+"end": 5,
+"type": "COMPROU",
+"properties": {
+"Quantidade": 2
+            }
+          },
+          "end": {
+"identity": 5,
+"labels": [
+              "Produto"
+            ],
+"properties": {
+"Nome": "Bolsa de Couro",
+"Id": 1
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 1,
+"labels": [
+          "Cliente"
+        ],
+"properties": {
+"Nome": "Joao",
+"Id": 2
+        }
+      },
+"end": {
+"identity": 7,
+"labels": [
+          "Produto"
+        ],
+"properties": {
+"Nome": "Camisa Social",
+"Id": 3
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 1,
+"labels": [
+              "Cliente"
+            ],
+"properties": {
+"Nome": "Joao",
+"Id": 2
+            }
+          },
+          "relationship": {
+"identity": 5,
+"start": 1,
+"end": 7,
+"type": "COMPROU",
+"properties": {
+"Quantidade": 2
+            }
+          },
+          "end": {
+"identity": 7,
+"labels": [
+              "Produto"
+            ],
+"properties": {
+"Nome": "Camisa Social",
+"Id": 3
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 1,
+"labels": [
+          "Cliente"
+        ],
+"properties": {
+"Nome": "Joao",
+"Id": 2
+        }
+      },
+"end": {
+"identity": 5,
+"labels": [
+          "Produto"
+        ],
+"properties": {
+"Nome": "Bolsa de Couro",
+"Id": 1
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 1,
+"labels": [
+              "Cliente"
+            ],
+"properties": {
+"Nome": "Joao",
+"Id": 2
+            }
+          },
+          "relationship": {
+"identity": 2,
+"start": 1,
+"end": 5,
+"type": "COMPROU",
+"properties": {
+"Quantidade": 2
+            }
+          },
+          "end": {
+"identity": 5,
+"labels": [
+              "Produto"
+            ],
+"properties": {
+"Nome": "Bolsa de Couro",
+"Id": 1
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 2,
+"labels": [
+          "Cliente"
+        ],
+"properties": {
+"Nome": "Paulo Terra",
+"Id": 3
+        }
+      },
+"end": {
+"identity": 6,
+"labels": [
+          "Produto"
+        ],
+"properties": {
+"Nome": "Sapato",
+"Id": 2
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 2,
+"labels": [
+              "Cliente"
+            ],
+"properties": {
+"Nome": "Paulo Terra",
+"Id": 3
+            }
+          },
+          "relationship": {
+"identity": 4,
+"start": 2,
+"end": 6,
+"type": "COMPROU",
+"properties": {
+"Quantidade": 2
+            }
+          },
+          "end": {
+"identity": 6,
+"labels": [
+              "Produto"
+            ],
+"properties": {
+"Nome": "Sapato",
+"Id": 2
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 2,
+"labels": [
+          "Cliente"
+        ],
+"properties": {
+"Nome": "Paulo Terra",
+"Id": 3
+        }
+      },
+"end": {
+"identity": 5,
+"labels": [
+          "Produto"
+        ],
+"properties": {
+"Nome": "Bolsa de Couro",
+"Id": 1
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 2,
+"labels": [
+              "Cliente"
+            ],
+"properties": {
+"Nome": "Paulo Terra",
+"Id": 3
+            }
+          },
+          "relationship": {
+"identity": 3,
+"start": 2,
+"end": 5,
+"type": "COMPROU",
+"properties": {
+"Quantidade": 2
+            }
+          },
+          "end": {
+"identity": 5,
+"labels": [
+              "Produto"
+            ],
+"properties": {
+"Nome": "Bolsa de Couro",
+"Id": 1
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  }
+]

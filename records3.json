@@ -1,0 +1,176 @@
+﻿[
+  {
+    "p": {
+"start": {
+"identity": 3,
+"labels": [
+          "Vendedor"
+        ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+        }
+      },
+"end": {
+"identity": 0,
+"labels": [
+          "Cliente"
+        ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 3,
+"labels": [
+              "Vendedor"
+            ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+            }
+          },
+          "relationship": {
+"identity": 6,
+"start": 3,
+"end": 0,
+"type": "VENDEU_PARA",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 0,
+"labels": [
+              "Cliente"
+            ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 4,
+"labels": [
+          "Vendedor"
+        ],
+"properties": {
+"Nome": "Matias",
+"Id": 2
+        }
+      },
+"end": {
+"identity": 1,
+"labels": [
+          "Cliente"
+        ],
+"properties": {
+"Nome": "Joao",
+"Id": 2
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 4,
+"labels": [
+              "Vendedor"
+            ],
+"properties": {
+"Nome": "Matias",
+"Id": 2
+            }
+          },
+          "relationship": {
+"identity": 8,
+"start": 4,
+"end": 1,
+"type": "VENDEU_PARA",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 1,
+"labels": [
+              "Cliente"
+            ],
+"properties": {
+"Nome": "Joao",
+"Id": 2
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 3,
+"labels": [
+          "Vendedor"
+        ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+        }
+      },
+"end": {
+"identity": 2,
+"labels": [
+          "Cliente"
+        ],
+"properties": {
+"Nome": "Paulo Terra",
+"Id": 3
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 3,
+"labels": [
+              "Vendedor"
+            ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+            }
+          },
+          "relationship": {
+"identity": 7,
+"start": 3,
+"end": 2,
+"type": "VENDEU_PARA",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 2,
+"labels": [
+              "Cliente"
+            ],
+"properties": {
+"Nome": "Paulo Terra",
+"Id": 3
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  }
+]

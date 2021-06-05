@@ -1,0 +1,98 @@
+﻿[
+  {
+    "n": {
+"identity": 0,
+"labels": [
+        "Cliente"
+      ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1,
+"labels": [
+        "Cliente"
+      ],
+"properties": {
+"Nome": "Joao",
+"Id": 2
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 2,
+"labels": [
+        "Cliente"
+      ],
+"properties": {
+"Nome": "Paulo Terra",
+"Id": 3
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 3,
+"labels": [
+        "Vendedor"
+      ],
+"properties": {
+"Nome": "Maria",
+"Id": 1
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 4,
+"labels": [
+        "Vendedor"
+      ],
+"properties": {
+"Nome": "Matias",
+"Id": 2
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 5,
+"labels": [
+        "Produto"
+      ],
+"properties": {
+"Nome": "Bolsa de Couro",
+"Id": 1
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6,
+"labels": [
+        "Produto"
+      ],
+"properties": {
+"Nome": "Sapato",
+"Id": 2
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7,
+"labels": [
+        "Produto"
+      ],
+"properties": {
+"Nome": "Camisa Social",
+"Id": 3
+      }
+    }
+  }
+]

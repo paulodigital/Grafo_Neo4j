@@ -1,0 +1,58 @@
+CÓDIGO DO CYPHER
+
+CRIANDO NÓS E RELAÇÕES - CLIENTE | VENDEDOR | PRODUTO
+
+CREATE (c1:Cliente {Nome: "Maria", Id: 1})
+CREATE (c2:Cliente {Nome: "Joao", Id: 2})
+CREATE (c3:Cliente {Nome: "Paulo Terra", Id: 3})
+CREATE (v1:Vendedor {Nome: "Maria", Id: 1})
+CREATE (v2:Vendedor {Nome: "Matias", Id: 2})
+CREATE (p1:Produto {Nome: "Bolsa de Couro", Id: 1})
+CREATE (p2:Produto {Nome: "Sapato", Id: 2})
+CREATE (p3:Produto {Nome: "Camisa Social", Id: 3})
+CREATE (c1)-[r1:COMPROU {Quantidade: 2}]->(p1)
+CREATE (c1)-[r2:COMPROU {Quantidade: 2}]->(p2)
+CREATE (c2)-[r3:COMPROU {Quantidade: 2}]->(p1)
+CREATE (c3)-[r4:COMPROU {Quantidade: 2}]->(p1)
+CREATE (c3)-[r5:COMPROU {Quantidade: 2}]->(p2)
+CREATE (c2)-[r6:COMPROU {Quantidade: 2}]->(p3)
+CREATE (v1)-[r7:VENDEU_PARA]->(c1)
+CREATE (v1)-[r8:VENDEU_PARA]->(c3)
+CREATE (v2)-[r9:VENDEU_PARA]->(c2);
+
+** QUANTOS PRODUTOS TEMOS?
+MATCH (n:Produto) RETURN count(n);
+
+** QUANTOS CLIENTES TEMOS?
+MATCH (n:Cliente) RETURN count(n);
+
+** QUEM SÇAO NOSSOS CLIENTES?
+MATCH (u:Cliente) RETURN *;
+
+** QUAIS PRODUTOS O CLIENTE 1 COMPROU?
+MATCH (c:Cliente{ Id: 1}), (p:Produto) RETURN *;
+
+** QUEM COMPROU CAMISETAS?
+MATCH (c)-[:COMPROU]->(p:Produto {Nome:'Camiseta'})
+RETURN c;
+
+**QUAL O PRODUTO MAIS VENDIDO?
+MATCH (c)-[r:COMPROU]->(p) RETURN p.Nome ORDER BY
+r.Quantidade DESC LIMIT 1;
+
+** QUAL O VENDENDOR COM MAIS CLIENTES?
+MATCH (c:Cliente{ Id: 1}), (p:Produto) RETURN *;
+
+**QUAL O VENDEDOR QUE VENDEU MAS PRODUTOS?
+MATCH (v)-[r:VENDEU_PARA]->(c) RETURN v.Nome AS
+Nome_Vendedor, count(v.Nome) AS Total_Clientes ORDER
+BY Total_Clientes DESC LIMIT 1;
+
+** QUAL OUTRO PRODUTO DEVEMOS OFERECER PARA JOÃO?
+MATCH (v)-[r:VENDEU_PARA]->(c) RETURN v.Nome AS
+Nome_Vendedor, count(v.Nome) AS Total_Clientes ORDER
+BY Total_Clientes DESC LIMIT 1;
+
+
+
+
